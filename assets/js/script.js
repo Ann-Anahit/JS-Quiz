@@ -113,3 +113,33 @@ modalStartBtn.addEventListener('click', () => {
       }
   });
   
+   
+// Event listener for the "Next" button
+nextBtn.addEventListener("click", nextQuestion);
+
+// Event listener for the "Restart" button
+restartBtn.addEventListener("click", resetQuiz);
+
+// Event listener for answer buttons
+// Function to display a random question
+function displayRandomQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+
+    // Display the question number
+    questionContainer.textContent = `Question ${questionsAnswered + 1}: ${currentQuestion.question}`;
+
+    // Display the answer options
+    currentQuestion.answers.forEach((answer, index) => {
+        answerButtons[index].textContent = answer;
+        answerButtons[index].style.backgroundColor = ""; // Reset button color
+        answerButtons[index].disabled = false; // Enable button
+        answerButtons[index].addEventListener('click', () => checkAnswer(answer));
+    });
+
+answerButtons.forEach((button, index) => {
+  button.textContent = currentQuestion.answers[index];
+  button.style.backgroundColor = ""; // Reset button color
+  button.disabled = false; // Enable button
+  button.addEventListener('click', () => checkAnswer(currentQuestion.answers[index], currentQuestion.correctAnswer));
+});
+}
