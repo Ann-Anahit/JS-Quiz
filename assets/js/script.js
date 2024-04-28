@@ -83,6 +83,7 @@ let questionsAnswered = 0; // Initialize the number of questions answered by the
   },
  
 ];
+// Modal created using tutorials - https://www.w3schools.com/howto/howto_css_modals.asp, https://www.youtube.com/watch?v=TAB_v6yBXIE&ab_channel=KevinPowell
 // Define the openModal function
 function openModal() {
   modal.showModal();
@@ -123,7 +124,6 @@ nextBtn.addEventListener("click", nextQuestion);
 // Event listener for the "Restart" button
 restartBtn.addEventListener("click", resetQuiz);
 
-// Event listener for answer buttons
 // Function to display a random question with shuffled answer options
 function displayRandomQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
