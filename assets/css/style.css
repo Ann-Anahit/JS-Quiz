@@ -1,0 +1,24 @@
+:root {
+    /*--Colours--*/
+    --text-color:  aliceblue;
+    --primary-color: #102747;
+    --secondary-color: linear-gradient(#00050d, #3866a6);
+    --hover: #0D1C33;
+    --background-colour: rgba(0, 0, 0, 0.8); 
+    --red: #800e32;
+    --green: #055d2c;
+  }
+  body {
+    font-family: 'lato';
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
