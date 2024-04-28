@@ -143,3 +143,27 @@ answerButtons.forEach((button, index) => {
   button.addEventListener('click', () => checkAnswer(currentQuestion.answers[index], currentQuestion.correctAnswer));
 });
 }
+// Function to check the selected answer
+function checkAnswer(selectedAnswer, correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
+        // Add 1 point for a correct answer
+        score += 1;
+        scoreDisplay.textContent = score;
+        event.target.style.backgroundColor = "#055d2c"; // Set button color to green for correct answer
+    } else {
+        event.target.style.backgroundColor = "#800e32"; // Set button color to red for incorrect answer
+
+        // Find the correct answer button and mark it as green
+        answerButtons.forEach(button => {
+            if (button.textContent === correctAnswer) {
+                button.style.backgroundColor = "#055d2c"; // Set correct answer button color to green
+            }
+        });
+    }
+    // Disable all answer buttons to prevent further clicks
+    answerButtons.forEach(button => {
+        button.disabled = true;
+    });
+
+    questionsAnswered++; // Increment the number of questions answered
+}
