@@ -83,38 +83,31 @@ let questionsAnswered = 0; // Initialize the number of questions answered by the
   },
  
 ];
-// Define the openModal function
-function openModal() {
-    modal.showModal();
+
+// Function to start the quiz
+function startQuiz() {
+    console.log("Starting quiz...");
+    closeModal(); // Close modal
+    displayRandomQuestion(); // Display random question
+    const playerName = playerNameInput.value.trim(); // Get player name
+    playerNameDisplay.textContent = playerName; // Update player name in the score line
 }
 
+// Event listener for the modal start button
+modalStartBtn.addEventListener('click', () => {
+    console.log("Modal start button clicked.");
+    const playerName = playerNameInput.value.trim(); // Get player name
+    if (playerName !== '') {
+        startQuiz(); // Start quiz
+    } else {
+        alert('Please enter your name to start the game.'); // Prompt user to enter name
+    }
+});
 // Function to close the modal
 function closeModal() {
     modal.close();
 }
 
-// Function to start the quiz
-function startQuiz() {
-    console.log("Starting quiz...");
-      closeModal(); // Close modal
-      displayRandomQuestion(); // Display random question
-      const playerName = playerNameInput.value.trim(); // Get player name
-      playerNameDisplay.textContent = playerName; // Update player name in the score line
-  }
-// Event listener for the "Start Game" button
-restartBtn.addEventListener('click', openModal);
-
-  // Event listener for the modal start button
-modalStartBtn.addEventListener('click', () => {
-    console.log("Modal start button clicked.");
-      const playerName = playerNameInput.value.trim(); // Get player name
-      if (playerName !== '') {
-          startQuiz(); // Start quiz
-      } else {
-          alert('Please enter your name to start the game.'); // Prompt user to enter name
-      }
-  });
-    
 // Event listener for the "Next" button
 nextBtn.addEventListener("click", nextQuestion);
 
@@ -122,6 +115,10 @@ nextBtn.addEventListener("click", nextQuestion);
 restartBtn.addEventListener("click", resetQuiz);
 
 // Event listener for answer buttons
+answerButtons.forEach(button => {
+    button.addEventListener('click', () => checkAnswer(button.textContent));
+});
+
 // Function to display a random question
 function displayRandomQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
@@ -134,25 +131,21 @@ function displayRandomQuestion() {
         answerButtons[index].textContent = answer;
         answerButtons[index].style.backgroundColor = ""; // Reset button color
         answerButtons[index].disabled = false; // Enable button
-        answerButtons[index].addEventListener('click', () => checkAnswer(answer));
     });
-
-answerButtons.forEach((button, index) => {
-  button.textContent = currentQuestion.answers[index];
-  button.style.backgroundColor = ""; // Reset button color
-  button.disabled = false; // Enable button
-  button.addEventListener('click', () => checkAnswer(currentQuestion.answers[index], currentQuestion.correctAnswer));
-});
 }
+
 // Function to check the selected answer
-function checkAnswer(selectedAnswer, correctAnswer) {
+function checkAnswer(selectedAnswer) {
+    const correctAnswer = questions[currentQuestionIndex].correctAnswer;
+    const selectedButton = event.target;
+
     if (selectedAnswer === correctAnswer) {
         // Add 1 point for a correct answer
         score += 1;
         scoreDisplay.textContent = score;
-        event.target.style.backgroundColor = "#055d2c"; // Set button color to green for correct answer
+        selectedButton.style.backgroundColor = "#055d2c"; // Set button color to green for correct answer
     } else {
-        event.target.style.backgroundColor = "#800e32"; // Set button color to red for incorrect answer
+        selectedButton.style.backgroundColor = "#800e32"; // Set button color to red for incorrect answer
 
         // Find the correct answer button and mark it as green
         answerButtons.forEach(button => {
@@ -161,6 +154,7 @@ function checkAnswer(selectedAnswer, correctAnswer) {
             }
         });
     }
+
     // Disable all answer buttons to prevent further clicks
     answerButtons.forEach(button => {
         button.disabled = true;
@@ -169,37 +163,39 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     questionsAnswered++; // Increment the number of questions answered
 }
 
+// Function to move to the next question
 function nextQuestion() {
     console.log("Moving to next question...");
-      console.log("Current question index:", currentQuestionIndex);
-      console.log("Questions answered:", questionsAnswered);
-      
-      if (questionsAnswered < 12 && currentQuestionIndex < questions.length - 1) {
-          currentQuestionIndex++;
-          displayRandomQuestion(); // Display next question
-      } else {
-          endQuiz(); // End the quiz if the player has answered 12 questions or reached the end of the questions array
-      }
-  }
-  // Function to reset the quiz
-  function resetQuiz() {
-      currentQuestionIndex = 0; // Reset current question index
-      score = 0; // Reset score
-      questionsAnswered = 0; // Reset the number of questions answered
-      scoreDisplay.textContent = score; // Reset score display
-      displayRandomQuestion(); // Display first question
-  }
-  
-  // Function to end the quiz
-  function endQuiz() {
-      const playerName = playerNameDisplay.textContent;
-      const finalScore = scoreDisplay.textContent;
-      finalScoreText.textContent = `Congratulations ${playerName}! Your final score is ${finalScore}.`;
-      finalScoreModal.showModal();
-  }
-  // Add event listener to the close button of the final score modal
+    console.log("Current question index:", currentQuestionIndex);
+    console.log("Questions answered:", questionsAnswered);
+
+    if (questionsAnswered < 12 && currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        displayRandomQuestion(); // Display next question
+    } else {
+        endQuiz(); // End the quiz if the player has answered 12 questions or reached the end of the questions array
+    }
+}
+
+// Function to reset the quiz
+function resetQuiz() {
+    currentQuestionIndex = 0; // Reset current question index
+    score = 0; // Reset score
+    questionsAnswered = 0; // Reset the number of questions answered
+    scoreDisplay.textContent = score; // Reset score display
+    displayRandomQuestion(); // Display first question
+}
+
+// Function to end the quiz
+function endQuiz() {
+    const playerName = playerNameDisplay.textContent;
+    const finalScore = scoreDisplay.textContent;
+    finalScoreText.textContent = `Congratulations ${playerName}! Your final score is ${finalScore}.`;
+    finalScoreModal.showModal();
+}
+
+// Add event listener to the close button of the final score modal
 finalScoreCloseBtn.addEventListener('click', () => {
     // Close the final score modal
     finalScoreModal.close();
-  });
-  
+});
