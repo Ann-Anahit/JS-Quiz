@@ -113,6 +113,8 @@ modalStartBtn.addEventListener('click', () => {
     } else {
         alert('Please enter your name to start the game.'); // Prompt user to enter name
     }
+   // Update total questions display
+totalQuestionsDisplay.textContent = `/${questions.length}`.trim();
 });
   
 // Event listener for the "Next" button
