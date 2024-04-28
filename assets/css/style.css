@@ -122,3 +122,29 @@ label {
     color: var(--text-color); 
     border-radius: 1.5rem;
 }
+#question {
+    display: block;
+    width: 80%;
+    margin: 5px auto; 
+    padding: 15px 20px;
+    border: 0 solid;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);  
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.answer-btn {
+    display: block; 
+    width: 80%; 
+    margin: 5px auto; 
+    font-size: 18px;
+    padding: 15px 0; 
+    background-color: var(--primary-color);
+    border: 0 solid;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--text-color); 
+}
