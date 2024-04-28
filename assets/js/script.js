@@ -83,7 +83,15 @@ let questionsAnswered = 0; // Initialize the number of questions answered by the
   },
  
 ];
+// Define the openModal function
+function openModal() {
+    modal.showModal();
+}
 
+// Function to close the modal
+function closeModal() {
+    modal.close();
+}
 
 // Function to start the quiz
 function startQuiz() {
@@ -93,3 +101,15 @@ function startQuiz() {
       const playerName = playerNameInput.value.trim(); // Get player name
       playerNameDisplay.textContent = playerName; // Update player name in the score line
   }
+
+  // Event listener for the modal start button
+modalStartBtn.addEventListener('click', () => {
+    console.log("Modal start button clicked.");
+      const playerName = playerNameInput.value.trim(); // Get player name
+      if (playerName !== '') {
+          startQuiz(); // Start quiz
+      } else {
+          alert('Please enter your name to start the game.'); // Prompt user to enter name
+      }
+  });
+  
