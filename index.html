@@ -17,9 +17,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     
     <title>JS Quiz</title>
-
+    
 </head>
-<body>
+<body onload="openModal()">
+    <h1 class="heading"><a href="index.html">The JavaScript Quiz</a></h1>
+        <dialog class="modal" id="modal">
+            <h2 class="modal-heading">Questions about JavaScript!</h2>
+            <form class="modal-form" method="dialog">
+                <label for="name-input">Please enter your Name:</label>
+                <input id="name-input" name="name-input" class="modal-input" type="text" required>
+                <br>
+                <button class="modal-start-btn" id="modal-start-btn" type="submit" aria-label="start game">
+                    Start Quiz</button>
+            </form>
+        </dialog>
+        <dialog class="modal" id="final-score-modal">
+            <h2 class="modal-heading">Congratulations!</h2>
+            <p id="final-score-text">You win!</p>
+            <button id="close-btn">Close</button>
+        </dialog>
     
 </body>
+<footer>
+    
+</footer>
 </html>
