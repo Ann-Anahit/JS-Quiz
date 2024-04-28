@@ -167,3 +167,32 @@ function checkAnswer(selectedAnswer, correctAnswer) {
 
     questionsAnswered++; // Increment the number of questions answered
 }
+
+function nextQuestion() {
+    console.log("Moving to next question...");
+      console.log("Current question index:", currentQuestionIndex);
+      console.log("Questions answered:", questionsAnswered);
+      
+      if (questionsAnswered < 12 && currentQuestionIndex < questions.length - 1) {
+          currentQuestionIndex++;
+          displayRandomQuestion(); // Display next question
+      } else {
+          endQuiz(); // End the quiz if the player has answered 12 questions or reached the end of the questions array
+      }
+  }
+  // Function to reset the quiz
+  function resetQuiz() {
+      currentQuestionIndex = 0; // Reset current question index
+      score = 0; // Reset score
+      questionsAnswered = 0; // Reset the number of questions answered
+      scoreDisplay.textContent = score; // Reset score display
+      displayRandomQuestion(); // Display first question
+  }
+  
+  // Function to end the quiz
+  function endQuiz() {
+      const playerName = playerNameDisplay.textContent;
+      const finalScore = scoreDisplay.textContent;
+      finalScoreText.textContent = `Congratulations ${playerName}! Your final score is ${finalScore}.`;
+      finalScoreModal.showModal();
+  }
