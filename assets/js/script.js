@@ -83,3 +83,13 @@ let questionsAnswered = 0; // Initialize the number of questions answered by the
   },
  
 ];
+
+
+// Function to start the quiz
+function startQuiz() {
+    console.log("Starting quiz...");
+      closeModal(); // Close modal
+      displayRandomQuestion(); // Display random question
+      const playerName = playerNameInput.value.trim(); // Get player name
+      playerNameDisplay.textContent = playerName; // Update player name in the score line
+  }
