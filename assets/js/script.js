@@ -101,6 +101,8 @@ function startQuiz() {
       const playerName = playerNameInput.value.trim(); // Get player name
       playerNameDisplay.textContent = playerName; // Update player name in the score line
   }
+// Event listener for the "Start Game" button
+restartBtn.addEventListener('click', openModal);
 
   // Event listener for the modal start button
 modalStartBtn.addEventListener('click', () => {
@@ -112,8 +114,7 @@ modalStartBtn.addEventListener('click', () => {
           alert('Please enter your name to start the game.'); // Prompt user to enter name
       }
   });
-  
-   
+    
 // Event listener for the "Next" button
 nextBtn.addEventListener("click", nextQuestion);
 
@@ -196,3 +197,9 @@ function nextQuestion() {
       finalScoreText.textContent = `Congratulations ${playerName}! Your final score is ${finalScore}.`;
       finalScoreModal.showModal();
   }
+  // Add event listener to the close button of the final score modal
+finalScoreCloseBtn.addEventListener('click', () => {
+    // Close the final score modal
+    finalScoreModal.close();
+  });
+  
