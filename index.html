@@ -44,7 +44,18 @@
             <button class="answer-btn" data-answer="Creating interactive websites" id="idanswer1">Answer 1</button>
             <button class="answer-btn" data-answer="var" id="idanswer2">Answer 2</button>
             <button class="answer-btn" data-answer="// This is a comment" id="idanswer3">Answer 3</button>
-
+            <div class="score-container">
+                <div class="navigation-btns">
+                    <button id="instruction" onclick="window.location.href='instruction.html'">How to play</button>
+                    <button id="next">Next</button>
+                    <button id="restart-btn">Restart</button>
+                </div>
+                <hr>
+                <div class="player-info">
+                    <div class="score-btn" id="player">Player: <span id="player-name"></span></div>
+                    <div class="score-btn" id="score">Score: <span id="final-score">0</span></div>
+                </div>
+            </div>
         </div>
 </body>
 <footer>
