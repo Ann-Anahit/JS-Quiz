@@ -83,19 +83,30 @@ let questionsAnswered = 0; // Initialize the number of questions answered by the
   },
  
 ];
+// Define the openModal function
+function openModal() {
+  modal.showModal();
+}
+
+// Function to close the modal
+function closeModal() {
+  modal.close();
+}
 
 // Function to start the quiz
 function startQuiz() {
-    console.log("Starting quiz...");
+  console.log("Starting quiz...");
     closeModal(); // Close modal
     displayRandomQuestion(); // Display random question
     const playerName = playerNameInput.value.trim(); // Get player name
     playerNameDisplay.textContent = playerName; // Update player name in the score line
 }
+// Event listener for the "Start Game" button
+restartBtn.addEventListener('click', openModal);
 
 // Event listener for the modal start button
 modalStartBtn.addEventListener('click', () => {
-    console.log("Modal start button clicked.");
+  console.log("Modal start button clicked.");
     const playerName = playerNameInput.value.trim(); // Get player name
     if (playerName !== '') {
         startQuiz(); // Start quiz
@@ -103,11 +114,7 @@ modalStartBtn.addEventListener('click', () => {
         alert('Please enter your name to start the game.'); // Prompt user to enter name
     }
 });
-// Function to close the modal
-function closeModal() {
-    modal.close();
-}
-
+  
 // Event listener for the "Next" button
 nextBtn.addEventListener("click", nextQuestion);
 
@@ -115,60 +122,69 @@ nextBtn.addEventListener("click", nextQuestion);
 restartBtn.addEventListener("click", resetQuiz);
 
 // Event listener for answer buttons
-answerButtons.forEach(button => {
-    button.addEventListener('click', () => checkAnswer(button.textContent));
-});
-
-// Function to display a random question
+// Function to display a random question with shuffled answer options
 function displayRandomQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestion = questions[currentQuestionIndex];
 
-    // Display the question number
-    questionContainer.textContent = `Question ${questionsAnswered + 1}: ${currentQuestion.question}`;
+  // Display the question number
+  questionContainer.textContent = `Question ${questionsAnswered + 1}: ${currentQuestion.question}`;
 
-    // Display the answer options
-    currentQuestion.answers.forEach((answer, index) => {
-        answerButtons[index].textContent = answer;
-        answerButtons[index].style.backgroundColor = ""; // Reset button color
-        answerButtons[index].disabled = false; // Enable button
-    });
+  // Shuffle the answer options
+  const shuffledAnswers = shuffleArray(currentQuestion.answers);
+
+  // Display the shuffled answer options
+  answerButtons.forEach((button, index) => {
+      button.textContent = shuffledAnswers[index];
+      button.style.backgroundColor = ""; // Reset button color
+      button.disabled = false; // Enable button
+  });
+
+  // Add event listeners to the shuffled answer buttons
+  answerButtons.forEach((button, index) => {
+      button.addEventListener('click', () => checkAnswer(shuffledAnswers[index], currentQuestion.correctAnswer));
+  });
 }
 
-// Function to check the selected answer
-function checkAnswer(selectedAnswer) {
-    const correctAnswer = questions[currentQuestionIndex].correctAnswer;
-    const selectedButton = event.target;
+// Function to shuffle an array using Fisher-Yates algorithm
+function checkAnswer(selectedAnswer, correctAnswer) {
+  const selectedButton = Array.from(answerButtons).find(button => button.textContent === selectedAnswer);
+  const correctButton = Array.from(answerButtons).find(button => button.textContent === correctAnswer);
 
-    if (selectedAnswer === correctAnswer) {
-        // Add 1 point for a correct answer
-        score += 1;
-        scoreDisplay.textContent = score;
-        selectedButton.style.backgroundColor = "#055d2c"; // Set button color to green for correct answer
-    } else {
-        selectedButton.style.backgroundColor = "#800e32"; // Set button color to red for incorrect answer
+  if (selectedButton && correctButton) {
+      if (selectedAnswer === correctAnswer) {
+          // Increment the score for a correct answer
+          score++;
+          scoreDisplay.textContent = score;
+          selectedButton.style.backgroundColor = "#055d2c"; // Set button color to green for correct answer
+      } else {
+          selectedButton.style.backgroundColor = "#800e32"; // Set button color to red for incorrect answer
+          correctButton.style.backgroundColor = "#055d2c"; // Set correct answer button color to green
+      }
 
-        // Find the correct answer button and mark it as green
-        answerButtons.forEach(button => {
-            if (button.textContent === correctAnswer) {
-                button.style.backgroundColor = "#055d2c"; // Set correct answer button color to green
-            }
-        });
+      // Increment the number of questions answered only if the answer is checked
+      questionsAnswered++;
+  }
+
+  // Disable all answer buttons to prevent further clicks
+  answerButtons.forEach(button => {
+      button.disabled = true;
+  });
+}
+// Function to shuffle an array using Fisher-Yates algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
     }
-
-    // Disable all answer buttons to prevent further clicks
-    answerButtons.forEach(button => {
-        button.disabled = true;
-    });
-
-    questionsAnswered++; // Increment the number of questions answered
+    return array;
 }
 
-// Function to move to the next question
+
 function nextQuestion() {
-    console.log("Moving to next question...");
+  console.log("Moving to next question...");
     console.log("Current question index:", currentQuestionIndex);
     console.log("Questions answered:", questionsAnswered);
-
+    
     if (questionsAnswered < 12 && currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         displayRandomQuestion(); // Display next question
@@ -176,7 +192,6 @@ function nextQuestion() {
         endQuiz(); // End the quiz if the player has answered 12 questions or reached the end of the questions array
     }
 }
-
 // Function to reset the quiz
 function resetQuiz() {
     currentQuestionIndex = 0; // Reset current question index
@@ -193,9 +208,8 @@ function endQuiz() {
     finalScoreText.textContent = `Congratulations ${playerName}! Your final score is ${finalScore}.`;
     finalScoreModal.showModal();
 }
-
 // Add event listener to the close button of the final score modal
 finalScoreCloseBtn.addEventListener('click', () => {
-    // Close the final score modal
-    finalScoreModal.close();
+  // Close the final score modal
+  finalScoreModal.close();
 });
