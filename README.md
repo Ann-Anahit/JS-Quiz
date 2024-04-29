@@ -76,10 +76,12 @@ I want to be able to answer all the questions; if not, I can learn from my failu
 
 
 
-* I have used `#102747` & `linear-gradient(#00050d, #3866a6)` as the primary and secondary colours used for the buttons.
-* I have used `#` as the overlay used over the sites background image.
-* I have used `#` for the border of the modal and to display the wrong answers.
-* I have used `#` to display the correct answer.
+* I have used `#102747` & `linear-gradient(#00050d, #3866a6)` as the primary and secondary colours used for the buttons, modal and footer background.
+* I have used `#000000cc` as the overlay used over the sites background image.
+* I have used `#800e32` to display the incorrect answers.
+* I have used `#055d2c` to display the correct answers.
+* I have used `##0D1C33` as the hovercolor for the buttons.
+* I have used `#f0f8ff` for the text.
 
   ![JS Quiz Color Scheme]()
 
