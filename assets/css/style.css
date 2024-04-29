@@ -1,10 +1,10 @@
 :root {
     /*--Colours--*/
-    --text-color:  aliceblue;
+    --text-color:  #f0f8ff;
     --primary-color: #102747;
     --secondary-color: linear-gradient(#00050d, #3866a6);
     --hover: #0D1C33;
-    --background-colour: rgba(0, 0, 0, 0.8); 
+    --background-colour: #000000cc; 
     --red: #800e32;
     --green: #055d2c;
   }

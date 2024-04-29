@@ -1,11 +1,15 @@
 # JS Quiz
 
-![The JS-Quiz shown on a variety of screen sizes]()
+![The JS-Quiz shown on a variety of screen sizes](documentation/the-js-quiz.png)
 
 Visit the deployed site: [The JS-Quiz ](https://ann-anahit.github.io/JS-Quiz/)
 
-Explore the world of art and test your knowledge with this engaging art quiz 
-featuring questions about famous paintings, artists, and art history.
+The JS Quiz is a fun and educational JavaScript Quiz Game for students. Are you a student eager to delve into the world of JavaScript programming? Look no further than "JS-Quiz" – a captivating quiz game designed to make learning JavaScript both enjoyable and interactive. Say goodbye to dull textbooks and hello to a fun-filled learning adventure. With JS-Quiz, learning JavaScript becomes an exciting quest rather than a tedious chore.
+Embark on your JavaScript learning journey with JS-Quiz today and unlock the door to endless coding possibilities!
+
+
+
+
 
 
 ## CONTENTS
@@ -52,17 +56,16 @@ featuring questions about famous paintings, artists, and art history.
 
 #### First Time Visitor Goals
 
-* I want to take part in art quiz online and improve my knowledge about art. I want to be able to play at any time, anywhere.
+* I want to be able to play at any time, anywhere.
 * I want the site to be responsive to my device.
 * I want the site to be easy to navigate.
 
 #### Returning Visitor Goals
 
-
+I want to be able to answer all the questions; if not, I can learn from my failures because the correct answer will be shown if I choose the incorrect one.
 
 #### Frequent Visitor Goals
 
-* I want to be able to adjust the difficulty level to keep improving my knowledge.
 * I want to be able to log my high scores to see how I am performing.
 
 - - -
@@ -73,7 +76,7 @@ featuring questions about famous paintings, artists, and art history.
 
 
 
-* I have used `#` & `#000000` as the primary and secondary colours used for the sites text.
+* I have used `#102747` & `linear-gradient(#00050d, #3866a6)` as the primary and secondary colours used for the buttons.
 * I have used `#` as the overlay used over the sites background image.
 * I have used `#` for the border of the modal and to display the wrong answers.
 * I have used `#` to display the correct answer.
