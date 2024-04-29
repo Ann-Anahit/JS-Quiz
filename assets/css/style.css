@@ -75,7 +75,7 @@ label {
     font-family: 'lato';
     font-weight: bold;
     color: var(--text-color); 
-    margin: 5% auto;
+    margin: auto;
     padding: 1em;
     max-width: 320px;
     border: none var(--hover);
