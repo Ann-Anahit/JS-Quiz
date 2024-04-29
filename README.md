@@ -91,7 +91,7 @@ Google-webfonts-helper was used to import the chosen font for use in the site.
 
 * For the game I have used the google font [Lato](https://gwfh.mranftl.com/fonts/lato?subsets=latin).
 
-![Lato sans-serif Font Example](documentation/lato-font.png)
+![Lato sans-serif Font Example](documentation/lato-font.png
 
 I've chosen Lato sans-serif font for its clean lines, enhancing readability on screens. Its sleek design not only ensures a pleasant reading experience but also aligns well with the aesthetics of programming languages.
 
@@ -215,7 +215,7 @@ To Deploy the site using GitHub Pages:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [Ann-Anahit/JS-Quiz](https://github.com//)
+2. Go to the repository for the project, 
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -223,7 +223,7 @@ To fork the repository:
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, [Ann-Anahit/JS-Quiz](https://github.com/)
+2. Go to the repository for the project,
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
