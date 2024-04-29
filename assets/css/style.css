@@ -94,6 +94,14 @@ label {
     padding: .3em;
     background: var(--text-color); 
 }
+#close {
+    margin: 20px 200px;
+}
+#final-score-close-btn,
+#modal-start-btn {
+    margin: 5% auto;
+}
+
 #close,
 #final-score-close-btn,
 #modal-start-btn {
@@ -106,7 +114,6 @@ label {
     border-radius: 15px;
     text-align: center;
     text-decoration: none;
-    margin: 5% auto;
     color: var(--text-color); 
 }
 
