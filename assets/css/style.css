@@ -206,4 +206,15 @@ footer {
     flex-direction: column;
 
 }
+#instruction,
+#next,
+#restart-btn {
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px 50px; 
+    background-color: var(--primary-color); 
+    border: 1px solid;
+    border-radius: 15px;
+    color: var(--text-color); 
+}
 }
