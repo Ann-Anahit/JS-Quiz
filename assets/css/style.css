@@ -216,4 +216,10 @@ footer {
     border-radius: 15px;
     color: var(--text-color); 
 }
+h2 {
+    font-size: 20px;
+}
+#question {
+    font-size: 18px;
+}
 }
