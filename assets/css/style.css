@@ -198,3 +198,12 @@ footer {
     margin: .5em .8em;
     height: 30px;
 }
+@media (max-width: 481px) {
+
+    .navigation-btns {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+}
