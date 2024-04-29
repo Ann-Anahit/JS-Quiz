@@ -48,7 +48,7 @@ Embark on your JavaScript learning journey with JS-Quiz today and unlock the doo
   * [Acknowledgments](#acknowledgments)
 
 - - -
-![The JS-Quiz](documentation/the-quiz-arms-banner.png)
+![The JS-Quiz](documentation/The JavaScript-Quiz.png)
 
 ## User Experience (UX)
 
@@ -104,49 +104,40 @@ As the website is called JS-Quiz, I wanted to use an image for the page backgrou
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-![Home Page](documentation/wireframes/homewireframe.webp)
-![Instruction Page](documentation/wireframes/gamewireframe.webp)
+![Home Page](documentation/wireframes/home-page-wireframes.png)
+![Instruction Page](documentation/wireframes/instruction-page-wireframe.png)
 
 ### Features
 
-The website is comprised of a home page, a games page, a high scores page.
+The website is comprised of a home page and an instruction page.
 
 All Pages on the website are responsive and have:
 
 * A favicon in the browser tab.
 
-  ![favicon](documentation/favicon-image.webp)(https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
+  ![favicon](documentation/features/favicon.png)(https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
 
 * The title of the site at the top of every page. This title also acts as a link back to the home page.
-  ![Javascript-Quiz Title](documentation/.png)
+  ![Javascript-Quiz Title](documentation/features/title.png)
 
 
 #### The Home Page
 
 The home page ...
 
-![Home page image](documentation/features/index.png)
+![Home page image](documentation/features/home-page.png)
 
-The how to play  button opens a modal showing the user how to play the game. The modal contains a close button which will close the modal, and show the home page again.
+The how to play  button opens a page showing the user how to play the game. The page contains a close button which will close the page, and show the home page again.
 
-![Modal open image](documentation/features/modal.png)
+![instruction page image](documentation/features/instruction-page.png)
 
+At the outset, the player is prompted to enter their name in a modal window. Once the name is entered, the modal form disappears, initiating the start of the game.
 
-#### The Game Page
+![Modal open image](documentation/features/modal1.png)
 
-The game page displays the sites name as a title. This also acts as a link back to the home page. Initially on the game page you will be shown a container with three buttons to select the difficulty of the quiz the user can choose from.
+At the end, another modal appears displaying a congratulatory message indicating that the player has won, along with the player's total score.
 
-![Image of the game page difficulty selection buttons](documentation/features/difficulty.png)
-
-Once the user has selected their difficulty they will then be shown the quiz area. The quiz area contains the question and the 4  answer choices.
-
-when a user selects an answer, they will then be prevented from selecting any more answers. The quiz area border and the button selected will change styles depending on whether the answer selected was correct or incorrect. If the answer selected was correct, the score counter will add 10 to the score total. When the user clicks the next button the question no counter will increase by 1. If the user selects the wrong answer, the button selected will display red, and the correct answer will display as green.
-
-![Image of quiz area](documentation/features/quiz.png)
-
-Once a user has answered the 15 questions they will be taken to the end of the game which will allow them to enter their team name and submit it to be entered onto the high scores page if it is in the top 10 scores. The submit button is disabled by default to prevent the user from submitting without a team name. This is made clear to the user as the cursor will show not allowed when hovered over the submit button.
-
-![End of game](documentation/features/end.png)
+![End of game](documentation/features/modal2.png)
 
 #### The High Scores Page
 
