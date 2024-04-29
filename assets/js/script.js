@@ -180,8 +180,7 @@ function shuffleArray(array) {
     }
     return array;
 }
-
-
+// Function to move to the next question or end the quiz
 function nextQuestion() {
   console.log("Moving to next question...");
     console.log("Current question index:", currentQuestionIndex);
