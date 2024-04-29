@@ -74,7 +74,7 @@ I want to be able to answer all the questions; if not, I can learn from my failu
 
 ### Colour Scheme
 
-
+I aimed to maintain the color scheme in blue to match the background image, which is predominantly blue. I chose white for the text color to ensure readability. Additionally, green and red were selected as answer colors.
 
 * I have used `#102747` & `linear-gradient(#00050d, #3866a6)` as the primary and secondary colours used for the buttons, modal and footer background.
 * I have used `#000000cc` as the overlay used over the sites background image.
@@ -83,30 +83,29 @@ I want to be able to answer all the questions; if not, I can learn from my failu
 * I have used `##0D1C33` as the hovercolor for the buttons.
 * I have used `#f0f8ff` for the text.
 
-  ![JS Quiz Color Scheme]()
+  ![JS Quiz Color Scheme](documentation/js-quiz-color-sheme.png)
 
 ### Typography
 
-Google Fonts was used to import the chosen fonts for use in the site.
+Google-webfonts-helper was used to import the chosen font for use in the site.
 
 * For the game I have used the google font [Lato](https://gwfh.mranftl.com/fonts/lato?subsets=latin).
 
-![Lato sans-serif Font Example](documentation/baskervvile.webp)
+![Lato sans-serif Font Example](documentation/lato-font.png)
 
 I've chosen Lato sans-serif font for its clean lines, enhancing readability on screens. Its sleek design not only ensures a pleasant reading experience but also aligns well with the aesthetics of programming languages.
 
 
 ### Imagery
 
-As the website is called JS-Quiz, I wanted to use an image for the page background of an abstruct painting. Abstract backgrounds can add visual interest and attractiveness to the game, making it more engaging for players.
+As the website is called JS-Quiz, I wanted to use an image for the page background of an abstruct  digital background with a texture resembling technology circuit boards. Abstract backgrounds can add visual interest and attractiveness to the game, making it more engaging for players.
 
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ![Home Page](documentation/wireframes/homewireframe.webp)
-![Game Page](documentation/wireframes/gamewireframe.webp)
-![High Scores Page](documentation/wireframes/highscorewireframe.webp)
+![Instruction Page](documentation/wireframes/gamewireframe.webp)
 
 ### Features
 
