@@ -202,6 +202,7 @@ footer {
 
     .navigation-btns {
     padding: 5px 10px;
+    display: flex;
     flex-direction: column;
 
 }
