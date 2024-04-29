@@ -169,7 +169,6 @@ label {
 #instruction,
 #next,
 #restart-btn {
-    display: flex;
     margin: 5px;
     font-size: 18px;
     padding: 10px 50px; 
