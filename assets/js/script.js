@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 // Get the necessary elements from the DOM
 const modal = document.getElementById('modal');
 const modalStartBtn = document.getElementById('modal-start-btn');
@@ -195,11 +196,22 @@ function nextQuestion() {
 }
 // Function to reset the quiz
 function resetQuiz() {
-    currentQuestionIndex = 0; // Reset current question index
-    score = 0; // Reset score
-    questionsAnswered = 0; // Reset the number of questions answered
-    scoreDisplay.textContent = score; // Reset score display
-    displayRandomQuestion(); // Display first question
+  console.log("Initial currentQuestionIndex:", currentQuestionIndex);
+  console.log("Initial score:", score);
+  console.log("Initial questionsAnswered:", questionsAnswered);
+
+  currentQuestionIndex = 0; // Reset current question index
+  score = 0; // Reset score
+  questionsAnswered = 0; // Reset the number of questions answered
+  scoreDisplay.textContent = score; // Reset score display
+
+  console.log("Reset currentQuestionIndex:", currentQuestionIndex);
+  console.log("Reset score:", score);
+  console.log("Reset questionsAnswered:", questionsAnswered);
+
+  displayRandomQuestion(); // Display first question
+
+  console.log("Displayed question:", questionContainer.textContent);
 }
 
 // Function to end the quiz
@@ -213,4 +225,5 @@ function endQuiz() {
 finalScoreCloseBtn.addEventListener('click', () => {
   // Close the final score modal
   finalScoreModal.close();
+});
 });
