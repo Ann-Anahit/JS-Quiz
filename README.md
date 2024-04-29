@@ -139,27 +139,20 @@ At the end, another modal appears displaying a congratulatory message indicating
 
 ![End of game](documentation/features/modal2.png)
 
-#### The High Scores Page
-
-![High Scores Page Image](documentation/features/highscores.png)
-
 #### Future Implementations
 
 In future implementations I would like to:
 
-1. Give users the option to select the interesting and fun questions in their quiz about art.
-2. Create a back end database to enable me to store scores which would then allow you to see how you scored against other players.
+1. Integration with Learning Platforms: Partner with educational platforms or institutions to integrate the quiz game into their curriculum or learning management systems, offering a supplementary tool for students to reinforce their knowledge of JavaScript.
+2. Expand beyond quizzes and incorporate interactive tutorials or coding challenges to provide hands-on learning experiences for users to practice JavaScript concepts in a practical setting.
 
 
 ### Accessibility
 
-I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
 
 * Using semantic HTML.
 * Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
-* Ensuring that there is a sufficient colour contrast throughout the site.
-
-![contrast button](documentation/contrast-btn.png) ![Contrast button hover](documentation/contrast-btn-hover.png) ![contrast text](documentation/contrast-text.png)
+* Ensuring that everything is readeble.
 
 
 
@@ -171,7 +164,7 @@ HTML, CSS, Javascript
 
 ### Frameworks, Libraries & Programs Used
 
-* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+* [Figma](https://figma.com/) - Used to create wireframes.
 
 * [Git](https://git-scm.com/) - For version control.
 
@@ -179,7 +172,7 @@ HTML, CSS, Javascript
 
 * [GitPod](https://gitpod.io/) - IDE used to create the site.
 
-* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+* [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - To import the fonts used on the website.
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
@@ -187,9 +180,7 @@ HTML, CSS, Javascript
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
-
-* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+* [chatGPT](https://chat.openai.com/) - Used to generate questions for my quiz and to check the readme for spelling errors.
 
 - - -
 
@@ -197,7 +188,6 @@ HTML, CSS, Javascript
 
 ### Deployment
 
-The site is deployed using GitHub Pages - [JS-Quiz].
 
 To Deploy the site using GitHub Pages:
 
