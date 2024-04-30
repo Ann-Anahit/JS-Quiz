@@ -65,6 +65,7 @@ I want to be able to answer all the questions; if not, I can learn from my failu
 * I want to be able to log my high scores to see how I am performing.
 
 - - -
+[Back to top](<#contents>)
 
 ## Design
 
@@ -87,7 +88,7 @@ Google-webfonts-helper was used to import the chosen font for use in the site.
 
 * For the game I have used the google font [Lato](https://gwfh.mranftl.com/fonts/lato?subsets=latin).
 
-![Lato sans-serif Font Example](documentation/lato-font.png
+![Lato sans-serif Font Example](documentation/lato-font.png)
 
 I've chosen Lato sans-serif font for its clean lines, enhancing readability on screens. Its sleek design not only ensures a pleasant reading experience but also aligns well with the aesthetics of programming languages.
 
@@ -174,11 +175,14 @@ HTML, CSS, Javascript
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
+* [coolors.co](https://coolors.co/) To create colour sheme.
+
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
 * [chatGPT](https://chat.openai.com/) - Used to generate questions for my quiz and to check the readme for spelling errors.
 
 - - -
+[Back to top](<#contents>)
 
 ## Deployment & Local Development
 
@@ -225,6 +229,7 @@ To clone the repository:
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 - - -
+[Back to top](<#contents>)
 
 ## Testing
 
@@ -234,16 +239,17 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Known Bugs
 
-* When viewing on screens that use touch rather than a cursor, the colour change for the answer button selected is not immediately obvious as the hover state remains on the button. If the user clicks away from the button the colour can then been seen.
+* One bug that I found is that if the player clicks on the restart button, the questions appear sporadically, and they are not consistently 12 questions.
 
-  ![Touch Button Colour](documentation/touch-button-colour.gif)
+- This is the console log description of the behavior:
 
-* There is a a warning displaying in the console on the live page. This error seems to be because GitHub hosted pages disable googles 3rd party cookie alternative FLoC, which then throws this error. The error doesn't affect the site in any way.
-
-  ![Console warning](documentation/interest-cohort-error.png)
-
-* When friends tested the site they found that very rarely a game will get stuck on a question, and it will not populate a new question but the question no counter continues to increase. This issue only seems to be if a large number of games are played consecutively, possibly using up the questions in the API. I have not been able to replicate this issue to troubleshoot further.
-  ![Question overloaded](documentation/questions-depleted.gif)
+  Current question index: 1, Questions answered: 7
+  Moving to next question...
+  Current question index: 2, Questions answered: 9
+  Moving to next question...
+  Current question index: 3, Questions answered: 11
+  Moving to next question...
+  Current question index: 4, Questions answered: 13
 
 - - -
 
@@ -253,13 +259,16 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 I learned the JavaScript essentials from the Code Institute content.
 
-* I used [this You Tube tutorial](https://www.youtube.com/watch?v=TAB_v6yBXIE&t=503s) and this page [W3Schools] (https://www.w3schools.com/howto/howto_css_modals.asp)to learn how to create a modal dialog for the beginning and the end of the game.
+* I used [this You Tube tutorial](https://www.youtube.com/watch?v=TAB_v6yBXIE&t=503s) and this page [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)to learn how to create a modal dialog for the beginning and the end of the game.
 
 * For the questions I used the following page [This Math(.random)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) to further adapt the shuffle I had researched on W3Schools to work with the data I had.
 
 * I learned various methods for working with arrays from this specified page: [Array Methods](https://javascript.info/array-methods)
 
 * I used this Tutorial from CodeInstitute [JavaScript debugging tutor session] (https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view)https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view
+
+* - I used [Kera Cudmore's Quiz Arms Readme](https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md) as an inspiration for my project's Readme.
+
 
 ### Content
 
@@ -269,12 +278,17 @@ All other content for the site, such as introduction messages and instructions w
 
 ### Media
 
-[Page background image](https://de.vecteezy.com/vektorkunst/6826902-abstrakter-digitaler-hintergrund-mit-technologie-leiterplatten-textur-elektronischer-motherboard-illustration-kommunikation-und-engineering-konzept-vektor-illustration)
+- [Page background image](https://de.vecteezy.com/vektorkunst/6826902-abstrakter-digitaler-hintergrund-mit-technologie-leiterplatten-textur-elektronischer-motherboard-illustration-kommunikation-und-engineering-konzept-vektor-illustration)
+
+- [Favicon image](https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
 
 ### Acknowledgments
 
 I would like to acknowledge the following people:
 
+*  - Kay Welfare - My cohort facilitator.
 *  - My Code Institute Mentor Jubril Akolade.
 
 * My sister Seda Afijan - Who has consistently reminded me to take breaks, recognizing how easily they slip our minds when deeply engrossed in study and work. I appreciate her for being such a supportive and caring person.
+
+[Back to top](<#contents>)
