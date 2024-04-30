@@ -44,7 +44,8 @@ Embark on your JavaScript learning journey with JS-Quiz today and unlock the doo
   * [Acknowledgments](#acknowledgments)
 
 - - -
-![The JS-Quiz](documentation/images/The JavaScript-Quiz.png)
+![The JS-Quiz](documentation/images/the-javascript-quiz.png)
+
 
 ## User Experience (UX)
 
@@ -112,7 +113,8 @@ All Pages on the website are responsive and have:
 
 * A favicon in the browser tab.
 
-  ![favicon](documentation/features/favicon.png)(https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
+  ![favicon](documentation/features/favicon.png)
+  ![https://de.vecteezy.com/](https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
 
 * The title of the site at the top of every page. This title also acts as a link back to the home page.
   ![Javascript-Quiz Title](documentation/features/title.png)
@@ -265,7 +267,7 @@ I learned the JavaScript essentials from the Code Institute content.
 
 * I learned various methods for working with arrays from this specified page: [Array Methods](https://javascript.info/array-methods)
 
-* I used this Tutorial from CodeInstitute [JavaScript debugging tutor session] (https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view)https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view
+* I used this Tutorial from CodeInstitute [JavaScript debugging tutor session](https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view)https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view
 
 * - I used [Kera Cudmore's Quiz Arms Readme](https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md) as an inspiration for my project's Readme.
 
