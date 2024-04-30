@@ -41,8 +41,8 @@ I have gone through each page using google chrome developer tools & Firefox insp
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [javascript.js](testing/jshint/jshint1.png)- Passed.
-  [javascript.js](testing/jshint/jshint2.png)- Passed.
+* [javascript.js](testing/jshint/jshint1.png)
+  [javascript.js](testing/jshint/jshint2.png)
   [javascript.js](testing/jshint/jshint3.png) - Passed.
 
 
@@ -136,6 +136,8 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Restart button |when the Restart button is clicked the modal window should appears and the player should click again on start button to play  | Clicked on button | The modal window opens | Pass |
 | Restart button |when the Restart button is clicked the score should begin at 0  | Clicked on button | The score begins at 0 | Pass |
 | Restart button |when the Restart button is clicked the game should restart with the same instructions as before, (12 questions)  | Clicked on button | There are not consistently 12 questions | Fail |
+| Social media links | Social media links should open externally. | Clicked on social media icons at the bottom of the page. | The links open externally. | Pass |
+
 
 
 
@@ -144,4 +146,4 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | The Sites title | Link directs the user back to the home page | Clicked title | directed back to home page | Pass |
-| Close button | when the close button is clicked the modal window should appears and the player should click again on start button to play   | Clicked the close button | Home page reloads | Pass |
+| Close button | when the close button is clicked the modal window should appears and the player should click again on start button to play | Clicked the close button | Home page reloads | Pass |
