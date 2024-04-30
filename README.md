@@ -8,10 +8,6 @@ The JS Quiz is a fun and educational JavaScript Quiz Game for students. Are you 
 Embark on your JavaScript learning journey with JS-Quiz today and unlock the door to endless coding possibilities!
 
 
-
-
-
-
 ## CONTENTS
 
 * [User Experience](#user-experience-ux)
@@ -255,15 +251,15 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-* I used [this You Tube tutorial](https://www.youtube.com/watch?v=XH5OW46yO8I) to learn how to create a modal for the how to play section.
+I learned the JavaScript essentials from the Code Institute content.
 
-* As the API I used for the questions declared the correct answer and then had an array of incorrect answers, I had to find a way to shuffle the answers together so that the correct answer wouldn't always appear on the same button. Research led me to the Fisher-Yates Shuffle. Other methods of shuffling can favour some items in the array more than others, however the Fisher Yates Shuffle allows for a more even spread of probability of the answer being placed on each button. I used the following [YouTube tutorial](https://www.youtube.com/watch?v=eATLMjs7y4s&list=PL5egNEXQTWmFHAoWFVRLNAvD-9zzyWVxA&index=3) to further adapt the shuffle I had researched on W3Schools to work with the data I had.
+* I used [this You Tube tutorial](https://www.youtube.com/watch?v=TAB_v6yBXIE&t=503s) and this page [W3Schools] (https://www.w3schools.com/howto/howto_css_modals.asp)to learn how to create a modal dialog for the beginning and the end of the game.
 
-As the JavaScript modules of the Code Institute Diploma did not cover local storage, I had to do a bit of research into this topic myself in order to set up the high scores section of my site.
+* For the questions I used the following page [This Math(.random)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) to further adapt the shuffle I had researched on W3Schools to work with the data I had.
 
-* I used this [video tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9) on YouTube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) which taught me to save the team name and score to an object, that would then be saved into an array in local storage. It also explained how to sort the items in the array into descending score order, and then to splice the array, I have used the MAX_HIGH_SCORES as my point to splice.
+* I learned various methods for working with arrays from this specified page: [Array Methods](https://javascript.info/array-methods)
 
-* I used this [video tutorial](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on YouTube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) to learn how to insert the local storage into the high scores page.
+* I used this Tutorial from CodeInstitute [JavaScript debugging tutor session] (https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view)https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view
 
 ### Content
 
@@ -279,6 +275,6 @@ All other content for the site, such as introduction messages and instructions w
 
 I would like to acknowledge the following people:
 
-*  - My Code Institute Mentor.
+*  - My Code Institute Mentor Jubril Akolade.
 
 * My sister Seda Afijan - Who has consistently reminded me to take breaks, recognizing how easily they slip our minds when deeply engrossed in study and work. I appreciate her for being such a supportive and caring person.
