@@ -114,7 +114,7 @@ All Pages on the website are responsive and have:
 * A favicon in the browser tab.
 
   ![favicon](documentation/features/favicon.png)
-  ![https://de.vecteezy.com/](https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
+  [https://de.vecteezy.com/](https://de.vecteezy.com/vektorkunst/21287803-javascript-datei-vektor-icon-design)
 
 * The title of the site at the top of every page. This title also acts as a link back to the home page.
   ![Javascript-Quiz Title](documentation/features/title.png)
