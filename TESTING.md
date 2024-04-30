@@ -1,6 +1,6 @@
 # The JS Quiz -  Testing
 
-![The JS Quiz shown on a variety of screen sizes](documentation/responsivnes.png)
+![The JS Quiz shown on a variety of screen sizes](documentation/images/responsivnes.png)
 
 Visit the deployed site: [The JS-Quiz](https://ann-anahit.github.io/JS-Quiz/)
 
@@ -41,7 +41,9 @@ I have gone through each page using google chrome developer tools & Firefox insp
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [javascript.js](testing/jshint/jshint1.png)(testing/jshint/jshint2.png)(testing/jshint/jshint3.png) - Passed.
+* [javascript.js](testing/jshint/jshint1.png)- Passed.
+  [javascript.js](testing/jshint/jshint2.png)- Passed.
+  [javascript.js](testing/jshint/jshint3.png) - Passed.
 
 
 - - -
