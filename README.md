@@ -1,6 +1,6 @@
 # JS Quiz
 
-![The JS-Quiz shown on a variety of screen sizes](documentation/the-js-quiz.png)
+![The JS-Quiz shown on a variety of screen sizes](documentation/images/the-js-quiz.png)
 
 Visit the deployed site: [The JS-Quiz ](https://ann-anahit.github.io/JS-Quiz/)
 
@@ -44,7 +44,7 @@ Embark on your JavaScript learning journey with JS-Quiz today and unlock the doo
   * [Acknowledgments](#acknowledgments)
 
 - - -
-![The JS-Quiz](documentation/The JavaScript-Quiz.png)
+![The JS-Quiz](documentation/images/The JavaScript-Quiz.png)
 
 ## User Experience (UX)
 
@@ -80,7 +80,7 @@ I aimed to maintain the color scheme in blue to match the background image, whic
 * I have used `##0D1C33` as the hovercolor for the buttons.
 * I have used `#f0f8ff` for the text.
 
-  ![JS Quiz Color Scheme](documentation/js-quiz-color-sheme.png)
+  ![JS Quiz Color Scheme](documentation/images/js-quiz-color-sheme.png)
 
 ### Typography
 
@@ -88,14 +88,14 @@ Google-webfonts-helper was used to import the chosen font for use in the site.
 
 * For the game I have used the google font [Lato](https://gwfh.mranftl.com/fonts/lato?subsets=latin).
 
-![Lato sans-serif Font Example](documentation/lato-font.png)
+![Lato sans-serif Font Example](documentation/images/lato-font.png)
 
 I've chosen Lato sans-serif font for its clean lines, enhancing readability on screens. Its sleek design not only ensures a pleasant reading experience but also aligns well with the aesthetics of programming languages.
 
 
 ### Imagery
 
-As the website is called JS-Quiz, I wanted to use an image for the page background of an abstruct  digital background with a texture resembling technology circuit boards. Abstract backgrounds can add visual interest and attractiveness to the game, making it more engaging for players.
+As the website is called JS-Quiz, I wanted to use an image for the page background of an abstract  digital background with a texture resembling technology circuit boards. Abstract backgrounds can add visual interest and attractiveness to the game, making it more engaging for players.
 
 ### Wireframes
 
