@@ -267,9 +267,9 @@ I learned the JavaScript essentials from the Code Institute content.
 
 * I learned various methods for working with arrays from this specified page: [Array Methods](https://javascript.info/array-methods)
 
-* I used this Tutorial from CodeInstitute [JavaScript debugging tutor session](https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view)https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view
+* I used this Tutorial from CodeInstitute [JavaScript debugging tutor session](https://drive.google.com/file/d/1AE87BqXYPmvvP910Kiz17DcKQUvDSGWZ/view) 
 
-* - I used [Kera Cudmore's Quiz Arms Readme](https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md) as an inspiration for my project's Readme.
+* I used [Kera Cudmore's Quiz Arms Readme](https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md) as an inspiration for my project's Readme.
 
 
 ### Content
