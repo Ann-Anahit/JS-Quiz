@@ -140,7 +140,7 @@ At the end, another modal appears displaying a congratulatory message indicating
 
 In future implementations I would like to:
 
-1. Integration with Learning Platforms: Partner with educational platforms or institutions to integrate the quiz game into their curriculum or learning management systems, offering a supplementary tool for students to reinforce their knowledge of JavaScript.
+1. Integrate with Learning Platforms: Partner with educational platforms or institutions to integrate the quiz game into their curriculum or learning management systems, offering a supplementary tool for students to reinforce their knowledge of JavaScript.
 2. Expand beyond quizzes and incorporate interactive tutorials or coding challenges to provide hands-on learning experiences for users to practice JavaScript concepts in a practical setting.
 
 
