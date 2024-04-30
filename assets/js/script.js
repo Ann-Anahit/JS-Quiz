@@ -97,7 +97,6 @@ function closeModal() {
 
 // Function to start the quiz
 function startQuiz() {
-  console.log("Starting quiz...");
     closeModal(); // Close modal
     displayRandomQuestion(); // Display random question
     const playerName = playerNameInput.value.trim(); // Get player name
@@ -108,7 +107,6 @@ restartBtn.addEventListener('click', openModal);
 
 // Event listener for the modal start button
 modalStartBtn.addEventListener('click', () => {
-  console.log("Modal start button clicked.");
     const playerName = playerNameInput.value.trim(); // Get player name
     if (playerName !== '') {
         startQuiz(); // Start quiz
@@ -183,10 +181,6 @@ function shuffleArray(array) {
 }
 // Function to move to the next question or end the quiz
 function nextQuestion() {
-  console.log("Moving to next question...");
-    console.log("Current question index:", currentQuestionIndex);
-    console.log("Questions answered:", questionsAnswered);
-    
     if (questionsAnswered < 12 && currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         displayRandomQuestion(); // Display next question
@@ -196,22 +190,11 @@ function nextQuestion() {
 }
 // Function to reset the quiz
 function resetQuiz() {
-  console.log("Initial currentQuestionIndex:", currentQuestionIndex);
-  console.log("Initial score:", score);
-  console.log("Initial questionsAnswered:", questionsAnswered);
-
   currentQuestionIndex = 0; // Reset current question index
   score = 0; // Reset score
   questionsAnswered = 0; // Reset the number of questions answered
   scoreDisplay.textContent = score; // Reset score display
-
-  console.log("Reset currentQuestionIndex:", currentQuestionIndex);
-  console.log("Reset score:", score);
-  console.log("Reset questionsAnswered:", questionsAnswered);
-
   displayRandomQuestion(); // Display first question
-
-  console.log("Displayed question:", questionContainer.textContent);
 }
 
 // Function to end the quiz
